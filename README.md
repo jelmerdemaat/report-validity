@@ -1,6 +1,6 @@
 # `reportValidity()` ponyfill
 
-[GitHub](https://github.com/jelmerdemaat/report-validity) | [NPM](https://www.npmjs.com/package/report-validity) | [Demo](https://demo-cyfasgkqtn.now.sh/) | [Twitter](https://twitter.com/jelmerdemaat)
+[GitHub](https://github.com/jelmerdemaat/report-validity) | [NPM](https://www.npmjs.com/package/report-validity) | [Demo](https://demo-amphbwrigj.now.sh) | [Twitter](https://twitter.com/jelmerdemaat)
 
 This [ponyfill](https://ponyfill.com) recreates the `reportValidity` function in non-supporting browsers, and uses the native function if available.
 
@@ -15,7 +15,7 @@ What this means in the most common use case, is that you can _programmatically c
 Browser support for `reportValidity` is mainly lacking in IE11: https://www.caniuse.com/#feat=constraint-validation
 
 ## Working example
-See the [demo](https://demo-cyfasgkqtn.now.sh/).
+See the [demo](https://demo-amphbwrigj.now.sh).
 
 ## Usage
 Todo
