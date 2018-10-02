@@ -1,0 +1,30 @@
+{
+  "name": "report-validity",
+  "version": "0.1.0",
+  "description": "reportValidity() ponyfill",
+  "main": "index.js",
+  "scripts": {
+    "build": "microbundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jelmerdemaat/report-validity.git"
+  },
+  "keywords": [
+    "ponyfill",
+    "reportValidity",
+    "validity",
+    "checkValidity",
+    "IE11",
+    "form"
+  ],
+  "author": "Jelmer de Maat",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/jelmerdemaat/report-validity/issues"
+  },
+  "homepage": "https://github.com/jelmerdemaat/report-validity#readme",
+  "devDependencies": {
+    "microbundle": "^0.6.0"
+  }
+}
