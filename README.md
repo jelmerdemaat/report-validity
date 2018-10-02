@@ -1,5 +1,7 @@
 # `reportValidity()` ponyfill
 
+[GitHub](https://github.com/jelmerdemaat/report-validity) | [NPM](https://www.npmjs.com/package/report-validity) | [Demo](https://demo-cyfasgkqtn.now.sh/) | [Twitter](https://twitter.com/jelmerdemaat)
+
 This [ponyfill](https://ponyfill.com) recreates the `reportValidity` function in non-supporting browsers, and uses the native function if available.
 
 Explanation of `reportValidity`:
