@@ -14,3 +14,6 @@ Browser support for `reportValidity` is mainly lacking in IE11: https://www.cani
 
 ## Working example
 See the [demo](https://demo-cyfasgkqtn.now.sh/).
+
+## Usage
+Todo
