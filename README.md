@@ -12,3 +12,5 @@ What this means in the most common use case, is that you can _programmatically c
 
 Browser support for `reportValidity` is mainly lacking in IE11: https://www.caniuse.com/#feat=constraint-validation
 
+## Working example
+See the [demo](https://demo-cyfasgkqtn.now.sh/).
