@@ -50,12 +50,26 @@
             background: lightgray;
             border-radius: 0.2em;
         }
+
+        a {
+            color: deepskyblue;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 1.5em;
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>Form element <code>reportValidity()</code> ponyfill example</h1>
         <p>Links: <a href="https://github.com/jelmerdemaat/report-validity">GitHub</a> | <a href="https://www.npmjs.com/package/report-validity">NPM</a> | <a href="https://twitter.com/jelmerdemaat">Twitter</a></p>
+        <p>This <a href="https://ponyfill.com" rel="nofollow" target="_blank">ponyfill</a> recreates the <code>formElement.reportValidity()</code> function in non-supporting browsers, and uses the native function if available.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reportValidity" rel="nofollow" target="_blank">View reportValidity on MDN</a></p>
+        <p>Browser support for <code>reportValidity</code> is mainly lacking in IE11: <a href="https://www.caniuse.com/#feat=constraint-validation" rel="nofollow" target="_blank">https://www.caniuse.com/#feat=constraint-validation</a></p>
+        <h2>Test form</h2>
         <form>
             <label for="text">Text input</label>
             <input type="text" name="text" id="text" required placeholder="Example required text field">
@@ -64,7 +78,7 @@
             <label for="number">Number input</label>
             <input type="number" name="number" id="number" required placeholder="Example required number field">
 
-            <h2>Test actions</h2>
+            <h3>Actions</h3>
             <p>Use this button to report form validity using <code>reportValidity()</code>, but not submit the form:</p>
             <button type="button" class="reportValidity">Report form validity</button>
             <p>Output: <output>false</output></p>
