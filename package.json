@@ -5,8 +5,12 @@
   "main": "dist/report-validity.js",
   "module": "dist/report-validity.mjs",
   "umd:main": "dist/report-validity.umd.js",
+  "files": [
+    "dist/*.js",
+    "dist/*.mjs"
+  ],
   "scripts": {
-    "build": "microbundle -o dist",
+    "build": "microbundle --output dist --sourcemap false",
     "demo": "cp dist/report-validity.umd.js demo/ && cd demo && now --public && now alias"
   },
   "repository": {
