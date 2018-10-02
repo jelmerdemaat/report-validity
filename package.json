@@ -6,8 +6,8 @@
   "module": "dist/report-validity.mjs",
   "umd:main": "dist/report-validity.umd.js",
   "scripts": {
-    "build": "microbundle -o dist && npm run demo",
-    "demo": "cp dist/report-validity.umd.js demo/"
+    "build": "microbundle -o dist",
+    "demo": "cp dist/report-validity.umd.js demo/ && cd demo && now --public && now alias"
   },
   "repository": {
     "type": "git",
