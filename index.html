@@ -21,22 +21,31 @@
         code {
             font-family: monospace;
         }
+
+        main {
+            width: 90%;
+            max-width: 60em;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-    <form>
-        <label for="text">Text input</label>
-        <input type="text" name="text" required placeholder="Example required text field">
-        <label for="email">Email input</label>
-        <input type="email" name="url" required placeholder="Example required email field">
-        <label for="tel">Number input</label>
-        <input type="number" name="number" required placeholder="Example required number field">
-        <p>Use this button to report form validity using <code>reportValidity()</code>, but not submit the form:</p>
-        <button type="button" class="reportValidity">Report form validity</button>
-        <p>Use this button to submit the form using a normal submit action:</p>
-        <button type="submit">Submit this form</button>
-    </form>
-    <script src="./index.js"></script>
+    <main>
+        <h1>Forms <code>reportValidity()</code> ponyfill</h1>
+        <form>
+            <label for="text">Text input</label>
+            <input type="text" name="text" required placeholder="Example required text field">
+            <label for="email">Email input</label>
+            <input type="email" name="url" required placeholder="Example required email field">
+            <label for="tel">Number input</label>
+            <input type="number" name="number" required placeholder="Example required number field">
+            <p>Use this button to report form validity using <code>reportValidity()</code>, but not submit the form:</p>
+            <button type="button" class="reportValidity">Report form validity</button>
+            <p>Use this button to submit the form using a normal submit action:</p>
+            <button type="submit">Submit this form</button>
+        </form>
+    </main>
+    <script src="./dist/report-validity.umd.js"></script>
     <script>
         var form = document.querySelector('form'),
             btn = document.querySelector('.reportValidity');

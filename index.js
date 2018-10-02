@@ -1,4 +1,4 @@
-export function reportValidity (form) {
+export default reportValidity = (form) => {
     if (!form) {
         throw Error('Target form element missing for function `reportValidity`.')
     }
@@ -17,7 +17,7 @@ export function reportValidity (form) {
             form.reportValidityFakeSubmit.setAttribute('style', 'display:none');
             form.reportValidityFakeSubmit.setAttribute('class', 'reportValidityFakeSubmit');
 
-            form.reportValidityFakeSubmit.addEventListener('click', function (evt) {
+            form.reportValidityFakeSubmit.addEventListener('click', evt => {
                 if (form.checkValidity()) {
                     evt.preventDefault();
                 }

@@ -4,7 +4,7 @@
   "description": "reportValidity() ponyfill",
   "main": "index.js",
   "scripts": {
-    "build": "microbundle"
+    "build": "microbundle -o dist"
   },
   "repository": {
     "type": "git",
