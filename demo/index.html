@@ -50,7 +50,7 @@
 </head>
 <body>
     <main>
-        <h1>Form element <code>reportValidity()</code> ponyfill</h1>
+        <h1>Form element <code>reportValidity()</code> ponyfill example</h1>
         <form>
             <label for="text">Text input</label>
             <input type="text" name="text" id="text" required placeholder="Example required text field">
@@ -67,13 +67,11 @@
             <button type="submit">Submit this form</button>
         </form>
     </main>
-    <script src="./dist/report-validity.umd.js"></script>
+    <script src="./report-validity.umd.js"></script>
     <script>
         var form = document.querySelector('form'),
             btn = document.querySelector('.reportValidity'),
             output = document.querySelector('output');
-
-        // output.textContent = reportValidity(form);
 
         btn.addEventListener('click', function (evt) {
             output.textContent = reportValidity(form);
