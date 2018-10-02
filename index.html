@@ -18,29 +18,51 @@
             font: inherit;
         }
 
-        code {
+        input,
+        button {
+            padding: 0.25em;
+            margin: 0.5em 0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        code,
+        output {
             font-family: monospace;
         }
 
         main {
+            display: block;
             width: 90%;
             max-width: 60em;
             margin: 0 auto;
+        }
+
+        output {
+            display: inline-block;
+            padding: 0.2em;
+            background: lightgray;
+            border-radius: 0.2em;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>Forms <code>reportValidity()</code> ponyfill</h1>
+        <h1>Form element <code>reportValidity()</code> ponyfill</h1>
         <form>
             <label for="text">Text input</label>
-            <input type="text" name="text" required placeholder="Example required text field">
+            <input type="text" name="text" id="text" required placeholder="Example required text field">
             <label for="email">Email input</label>
-            <input type="email" name="url" required placeholder="Example required email field">
-            <label for="tel">Number input</label>
-            <input type="number" name="number" required placeholder="Example required number field">
+            <input type="email" name="email" id="email" required placeholder="Example required email field">
+            <label for="number">Number input</label>
+            <input type="number" name="number" id="number" required placeholder="Example required number field">
+
+            <h2>Test actions</h2>
             <p>Use this button to report form validity using <code>reportValidity()</code>, but not submit the form:</p>
             <button type="button" class="reportValidity">Report form validity</button>
+            <p>Output: <output>false</output></p>
             <p>Use this button to submit the form using a normal submit action:</p>
             <button type="submit">Submit this form</button>
         </form>
@@ -48,10 +70,13 @@
     <script src="./dist/report-validity.umd.js"></script>
     <script>
         var form = document.querySelector('form'),
-            btn = document.querySelector('.reportValidity');
+            btn = document.querySelector('.reportValidity'),
+            output = document.querySelector('output');
+
+        // output.textContent = reportValidity(form);
 
         btn.addEventListener('click', function (evt) {
-            console.log(reportValidity(form));
+            output.textContent = reportValidity(form);
         });
     </script>
 </body>
