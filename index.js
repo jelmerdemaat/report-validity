@@ -1,4 +1,4 @@
-export default reportValidity = (form) => {
+export default (form) => {
     if (!form) {
         throw Error('Target form element missing for function `reportValidity`.')
     }
