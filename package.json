@@ -1,6 +1,6 @@
 {
   "name": "report-validity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "reportValidity() ponyfill",
   "main": "dist/report-validity.js",
   "module": "dist/report-validity.mjs",
