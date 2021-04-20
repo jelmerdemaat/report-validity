@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "microbundle --output dist --sourcemap false",
-    "demo": "cp dist/report-validity.umd.js demo/ && cd demo && now --public && now alias"
+    "demo": "cp dist/report-validity.umd.js demo/ && cd demo && vercel --prod"
   },
   "repository": {
     "type": "git",
