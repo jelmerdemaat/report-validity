@@ -1,6 +1,6 @@
 # `reportValidity()` ponyfill
 
-[GitHub](https://github.com/jelmerdemaat/report-validity) | [NPM](https://www.npmjs.com/package/report-validity) | [Demo](https://report-validity.vercel.app) | [Twitter](https://twitter.com/jelmerdemaat)
+[GitHub](https://github.com/jelmerdemaat/report-validity) | [NPM](https://www.npmjs.com/package/report-validity) | [Demo](https://report-validity.vercel.app) | [Mastodon](https://mastodon.social/@jelmerdemaat)
 
 This [ponyfill](https://ponyfill.com) recreates the `reportValidity` function in non-supporting browsers, and uses the native function if available.
 
@@ -26,10 +26,10 @@ Install via NPM:
 npm install --save report-validity
 ```
 
-Or include the UMD file in your page:
+Or include the file in your page:
 
 ```html
-<script src="report-validity.umd.js"></script>
+<script src="report-validity.modern.js" type="module"></script>
 ```
 
 After that, call the `reportValidity()` function at any time:
