@@ -1,6 +1,6 @@
 # `reportValidity()` ponyfill
 
-[GitHub](https://github.com/jelmerdemaat/report-validity) | [NPM](https://www.npmjs.com/package/report-validity) | [Demo](https://report-validity.now.sh) | [Twitter](https://twitter.com/jelmerdemaat)
+[GitHub](https://github.com/jelmerdemaat/report-validity) | [NPM](https://www.npmjs.com/package/report-validity) | [Demo](https://report-validity.vercel.app) | [Twitter](https://twitter.com/jelmerdemaat)
 
 This [ponyfill](https://ponyfill.com) recreates the `reportValidity` function in non-supporting browsers, and uses the native function if available.
 
@@ -16,7 +16,7 @@ Browser support for `reportValidity` is mainly lacking in IE11: https://www.cani
 
 ## Working example
 
-See the [demo](https://report-validity.now.sh).
+See the [demo](https://report-validity.vercel.app).
 
 ## Usage
 

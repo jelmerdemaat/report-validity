@@ -10,8 +10,7 @@
     "dist/*.mjs"
   ],
   "scripts": {
-    "build": "microbundle --output dist --sourcemap false",
-    "demo": "cp dist/report-validity.umd.js demo/ && cd demo && now --public && now alias"
+    "build": "microbundle --output dist --sourcemap false"
   },
   "repository": {
     "type": "git",
