@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/jelmerdemaat/report-validity#readme",
   "devDependencies": {
-    "microbundle": "^0.13.0"
+    "microbundle": "^0.13.3"
   }
 }
