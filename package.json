@@ -10,7 +10,7 @@
     "dist/*.mjs"
   ],
   "scripts": {
-    "build": "microbundle --output dist --sourcemap false"
+    "build": "microbundle --output dist --sourcemap false && cp dist/report-validity.modern.js public/"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/jelmerdemaat/report-validity#readme",
   "devDependencies": {
-    "microbundle": "^0.13.3"
+    "microbundle": "^0.15.1"
   }
 }
